@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bankista</title>
+  <link rel="icon" type="image/gif/png" href="logo2.png">
+  <link rel="stylesheet" href="indexStyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <h4 class="p-3 welcome-message">Log in to get started</h4>
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="" width="50" height="50">
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2 custom-input user-input" type="text" placeholder="User">
+                <input class="form-control me-2 custom-input pin-input" type="password" placeholder="PIN">
+                <button class="btn custom-button login-button" type="submit"><i class="fa fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container cutom-container">
+        <div class="container-header d-flex justify-content-between">
+            <div class="left-header-side">
+                <h4>Current balance</h4>
+                <p class="text-muted current-time-balance">As of </p>
+            </div>
+            <div class="balance">
+                <h1 id="balance-value">0 €</h1>
+            </div>
+        </div>
+        <div class="container-content">
+            <div class="row ">
+                <div class="col-md-8 d-flex flex-column history-col overflow-auto">                  
+                </div>
+                <div class="col-md-4">
+                    <div class="row mx-auto">
+                        <div class="col-md-12 transfer-col">
+                            <h5 class="p-3 text-center"><b>Transfer money</b></h5>
+                            <form class="d-flex mb-3"> 
+                                <input class="form-control me-2 transfer-input border-0 transfer-account" type="text" placeholder="Transfer to">
+                                <input class="form-control me-2 transfer-input border-0 transfer-ammount" type="text" placeholder="Amount">
+                                <button class="btn custom-button trasfer-btn" type="submit"><i class="fa fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 mx-auto">
+                        <div class="col-md-12 request-col">
+                            <h5 class="p-3 text-center"><b>Reaquest loan</b></h5>
+                            <form class="d-flex mb-3"> 
+                                <input class="form-control me-2 transfer-input border-0 request-amount" type="text" placeholder="Amount">
+                                <button class="btn custom-button request-btn" type="submit"><i class="fa fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 mx-auto">
+                        <div class="col-md-12 close-acc-col">
+                            <h5 class="p-3 text-center"><b>Close account</b></h5>
+                            <form class="d-flex mb-3"> 
+                                <input class="form-control me-2 transfer-input border-0 confirm-user" type="text" placeholder="Confirm user">
+                                <input class="form-control me-2 transfer-input border-0 confirm-pin" type="password" placeholder="Confirm PIN">
+                                <button class="btn custom-button close-btn" type="submit"><i class="fa fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-footer d-flex justify-content-between mt-5">
+            <div class="left-footer-side">
+                <span>IN </span><h4 class="d-inline in-money">0 €</h4>
+                <span class="mx-2">OUT </span><h4 class="d-inline out-money">0 €</h4>
+                <span class="mx-2">INTEREST </span><h4 class="d-inline in-money interest-money">0 €</h4>
+                <button class="btn d-inline mx-2 sort-btn">↓ SORT</button>
+            </div>
+            <div class="right-footer-side">
+                <p class="log-out-time">You will be logged out in: 10:00</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+</html>

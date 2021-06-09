@@ -1,0 +1,88 @@
+body{
+    background-color: #f3f3f3 !important;
+}
+
+.custom-input{
+    border-radius: 20px !important;
+    width: 120px !important;
+}
+
+input::placeholder{
+    font-size: 14px;
+    text-align: center;
+}
+
+.cutom-container{
+    margin-top: 100px;
+    max-width: 1200px !important;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.transfer-col{
+    background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+    border-radius: 20px;
+}
+
+.transfer-input{
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    max-width: 120px !important;
+    max-height: 30px;
+    margin-left: 10px;
+}
+
+.request-col{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+    border-radius: 20px;
+}
+
+.close-acc-col{
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+    border-radius: 20px;
+}
+
+.in-money{
+    color: green;
+    margin-left: 10px;
+}
+
+.out-money{
+    color: red;
+}
+
+.history-col{
+    background-color: white;
+    border-radius: 20px;
+    max-height: 400px;
+}
+
+.deposit{
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+    border-radius: 20px;
+    color: white;
+}
+
+.withdrawal{
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+    border-radius: 20px;
+    color: white;
+}
+
+.transfer-date{
+    margin-left: 20px;
+}
+
+.transfer-ammount{
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.movement-hr{
+    border: solid 1px black;
+    height: 80vh;
+}
+
+.transaction-date{
+    margin-left: 20px;
+}
